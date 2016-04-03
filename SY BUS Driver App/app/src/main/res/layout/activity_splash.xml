@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.sybus.android.com.SplashActivity">
+
+    <ImageView
+        android:id="@+id/splash_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textView2" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView2"
+        android:text="SAJHA YATAYAT"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView3"
+        android:text="SY BUS - Driver's App"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/splash_progressBar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="93dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Loading..."
+        android:id="@+id/slash_loading_text"
+        android:layout_above="@+id/splash_progressBar"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

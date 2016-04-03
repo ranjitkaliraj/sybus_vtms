@@ -1,0 +1,282 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background_medium"
+    tools:context="com.sybus.android.userapp.ui.fragments.HomeSearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_home_page_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:background="@drawable/rectangular_layout_shadow_effect">
+
+            <!--using image view instead of SettingActivity background on relative layout so that we can implement bitmat and cache-->
+            <ImageView
+                android:id="@+id/home_page_imag"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/b1"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="43dp"
+                android:text="SYBUS"
+                android:textColor="@color/primary_text_light"
+                android:textSize="36dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_toRightOf="@+id/textView"
+                android:text="  SAJHA YATAYAT"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF" />
+
+
+            <TextView
+                android:id="@+id/search_description"
+                android:layout_width="fill_parent"
+                android:layout_height="18dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/search_description"
+                android:textColor="@color/screen_background_medium"
+                android:textSize="6pt"
+                android:layout_alignBottom="@+id/home_page_imag"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/divider_medium"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+
+            <SearchView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="-18dp"
+                android:id="@+id/searchView"
+                android:iconifiedByDefault="false"
+                android:layout_weight="0.75"
+                android:queryHint="Enter destination..."/>
+
+            <!--<EditText
+                android:id="@+id/home_search_field"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:background="#FFF"
+                android:textSize="7pt"
+                android:hint="Enter Destination..."
+                android:paddingLeft="8dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/primary_text"
+                android:layout_weight="0.7"/>-->
+
+            <Button
+                android:id="@+id/home_search_button"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="0.25"
+                android:text="Find" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/divider_medium" />
+
+        <LinearLayout
+            android:id="@+id/more_options"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="0.055"
+            android:background="@color/primary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="12dp"
+                android:text="MORE OPTIONS TO FIND A BUS"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        </LinearLayout>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scorll_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.5"
+            android:background="#FFF">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:weightSum="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginBottom="4dp"
+                    android:text="Please, select Route name from list:"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:id="@+id/route_list"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"
+                    android:padding="0dp"
+                    android:layout_weight="4.54" />
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="OR"
+                    android:layout_gravity="center"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/divider_medium" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Please, select Bus-stop name from list:"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/busstop_list"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"
+                    android:padding="0dp"
+                    android:layout_weight="4.54" />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:text="FIND A BUS"
+                    android:layout_gravity="center"
+                    android:id="@+id/option_search" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/divider_medium" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="SAJHA YATAYAT VEHICLE TRACKING AND MANAGEMENT SYSTEM"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <!--    <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.13"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="48dp"
+                android:background="@color/primary_dark"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:text="SY BUS by SAJHA YATAYAT"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text_light" />
+            </LinearLayout>  -->
+    </LinearLayout>
+
+
+</RelativeLayout>

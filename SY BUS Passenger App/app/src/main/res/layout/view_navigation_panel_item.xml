@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/touch_effect_bg"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/navigation_divider_container"
+        android:layout_width="280dp"
+        android:layout_height="1dp">
+
+        <View
+            android:id="@+id/navigation_divider"
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="@color/divider_medium"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/navigation_divider_container"
+        android:layout_width="280dp"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/listIcon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/ic_home_black_18dp" />
+
+        <TextView
+            android:id="@+id/listText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="72dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Dummy Text"
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

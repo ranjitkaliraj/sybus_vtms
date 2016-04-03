@@ -1,0 +1,51 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.sybus.android.userapp.ui.MainActivity">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/view_app_bar" />
+
+        <com.sybus.android.userapp.ui.components.SlidingTabLayout
+            android:id="@+id/tabBar"
+            android:layout_below="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary" />
+
+        <View
+            android:id="@+id/main_activity_tabbar_bottom_line"
+            android:layout_below="@id/tabBar"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:background="@drawable/tab_bar_shadow"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_below="@+id/main_activity_tabbar_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/screen_background_white"/>
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="com.sybus.android.userapp.ui.fragments.NavigationPanelFragment"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_panel_navigation"
+        tools:layout="@layout/fragment_panel_navigation"
+        />
+</android.support.v4.widget.DrawerLayout>
+

@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.sybus.android.userapp"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2048M"
+    }
+
+    lintOptions {
+        /* CGIARProvider refers to java.awt
+         * Helper7 refers to java.lang.management
+         * HeightTile refers to javax.imageio and java.awt
+         * OSMElement refers to javax.xml.stream
+         */
+        disable 'InvalidPackage'
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/gson-2.3.2-SNAPSHOT.jar')
+    compile files('libs/universal-image-loader-1.9.4.jar')
+
+    compile(group: 'com.graphhopper', name: 'graphhopper', version: '0.7-SNAPSHOT') {
+        exclude group: 'com.google.protobuf', module: 'protobuf-java'
+        exclude group: 'org.openstreetmap.osmosis', module: 'osmosis-osm-binary'
+        exclude group: 'org.apache.xmlgraphics', module: 'xmlgraphics-commons'
+    }
+
+    compile group: 'org.mapsforge', name: 'mapsforge-core', version: '0.6.0'
+    compile group: 'org.mapsforge', name: 'mapsforge-map', version: '0.6.0'
+    compile group: 'org.mapsforge', name: 'mapsforge-map-android', version: '0.6.0'
+    compile group: 'org.mapsforge', name: 'mapsforge-map-reader', version: '0.6.0'
+
+    compile group: 'org.slf4j', name: 'slf4j-android', version: '1.7.12'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.12'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.android.support:design:23.1.1'
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!--<TextView
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="-2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_email_title"/>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/divider_medium" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangular_layout_shadow_effect_light">
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="1dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="Enter email address"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/rectangular_layout_shadow_effect_light">
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="1dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </FrameLayout>
+
+    <!--<TextView
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="-2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_password_title" />-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/login_error_message"
+        android:id="@+id/login_error_message"
+        android:textColor="@color/new_error_message_color"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/divider_medium" />
+
+</LinearLayout>

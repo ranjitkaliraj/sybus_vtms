@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sybus.android.userapp.ui.SearchActivity">
+
+    <item
+        android:id="@+id/vehicle_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"
+        android:title="Search" />
+
+</menu>

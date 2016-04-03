@@ -1,0 +1,79 @@
+<spring:url value="resources/images/favicon.png" var="favicon" />
+
+<spring:url value="resources/css/bootstrap.min.css" var="bootstrapCss"/>
+<spring:url value="resources/css/bootstrap-theme.min.css" var="bootstrapThemeCss"/>
+<spring:url value="resources/css/dashboard.css" var="dashboardCss"/>
+
+<spring:url value="resources/leaflet/leaflet.css" var="leafletCss"/>
+<spring:url value="resources/leaflet/leaflet.label.css" var="leafletLabelCss"/>
+<spring:url value="resources/leaflet/leaflet.zoomdisplay.css" var="leafletZoomdisplayCss"/>
+<spring:url value="resources/leaflet/leaflet.awesome-markers.css" var="leafletAwesomeMarkersCss"/>
+<spring:url value="resources/leaflet/leaflet_numbered_markers.css" var="leafletNumberedMarkersCss"/>
+<spring:url value="resources/leaflet/easy-button.css" var="leafletEasyButtonCss"/>
+
+<spring:url value="resources/js/jquery-1.11.3.min.js" var="jqueryJs"/>
+<spring:url value="resources/js/bootstrap.js" var="bootstrapJs"/>
+
+<spring:url value="resources/leaflet/leaflet.js" var="leafletJs"/>
+<spring:url value="resources/leaflet/leaflet.zoomdisplay.js" var="leafletZoomdisplayJs"/>
+<spring:url value="resources/leaflet/leaflet.awesome-markers.js" var="leafletAwesomeMarkersJs"/>
+<spring:url value="resources/leaflet/leaflet.PolylineDecorator.js" var="leafletPolylineDecoratorJs"/>
+<spring:url value="resources/leaflet/easy-button.js" var="leafletEasyButtonJs"/>
+<spring:url value="resources/leaflet/leaflet.label-src.js" var="leafletLabelSrcJs"/>
+<spring:url value="resources/leaflet/leaflet.label.js" var="leafletLabelJs"/>
+
+<spring:url value="resources/images/icon.png" var="titleIcon" />
+<spring:url value="resources/images/action.gif" var="actionLoadingIcon" />
+<spring:url value="resources/images/Thin fading line.gif" var="loadingIcon" />
+<spring:url value="resources/images/bus61.png" var="busIcon" />
+
+
+
+Bulk replace in notepad++:
+
+TO replace:
+(images/favicon.png)|(css/bootstrap.min.css)|(css/bootstrap-theme.min.css)|(css/dashboard.css)|(leaflet/leaflet.css)|(leaflet/leaflet.label.css)|(leaflet/leaflet.zoomdisplay.css)|(leaflet/leaflet.awesome-markers.css)|(leaflet/leaflet_numbered_markers.css)|(leaflet/easy-button.css)|(js/jquery-1.11.3.min.js)|(js/bootstrap.js)|(leaflet/leaflet.js)|(leaflet/leaflet.zoomdisplay.js)|(leaflet/leaflet.awesome-markers.js)|(leaflet/leaflet.PolylineDecorator.js)|(leaflet/easy-button.js)|(leaflet/leaflet.label-src.js)|(leaflet/leaflet.label.js)|(images/icon.png)|(images/Thin fading line.gif)|(images/action.gif)|(images/bus61.png)
+
+
+Replaced Value:
+(?1${favicon})(?2${bootstrapCss})(?3${bootstrapThemeCss})(?4${dashboardCss})(?5${leafletCss})(?6${leafletLabelCss})(?7${leafletZoomdisplayCss})(?8${leafletAwesomeMarkersCss})(?9${leafletNumberedMarkersCss})(?10${leafletEasyButtonCss})(?11${jqueryJs})(?12${bootstrapJs})(?13${leafletJs})(?14${leafletZoomdisplayJs})(?15${leafletAwesomeMarkersJs})(?16${leafletPolylineDecoratorJs})(?17${leafletEasyButtonJs})(?18${leafletLabelSrcJs})(?19${leafletLabelJs})(?20${titleIcon})(?21${loadingIcon})(?22${actionLoadingIcon})(?23${busIcon})
+
+
+
+for reporting:
+(images/favicon.png)|(css/bootstrap.min.css)|(css/bootstrap-theme.min.css)|(css/dashboard.css)|(js/jquery-1.11.3.min.js)|(js/jquery-ui.min.js)|(js/bootstrap.js)|(js/jQuery.print.js)|(images/icon.png)|(images/Thin fading line.gif)|(images/action.gif)
+
+(?1${favicon})(?2${bootstrapCss})(?3${bootstrapThemeCss})(?4${dashboardCss})(?5${jqueryJs})(?6${jqueryUiJs})(?7${bootstrapJs})(?8${jqueryPrintJs})(?9${titleIcon})(?10${loadingIcon})(?11${actionLoadingIcon})
+
+
+
+
+<spring:url value="resources/images/favicon.png" var="favicon" />
+
+<spring:url value="resources/css/bootstrap.min.css" var="bootstrapCss"/>
+<spring:url value="resources/css/bootstrap-theme.min.css" var="bootstrapThemeCss"/>
+<spring:url value="resources/css/dashboard.css" var="dashboardCss"/>
+
+
+<spring:url value="resources/js/jquery-1.11.3.min.js" var="jqueryJs"/>
+<spring:url value="resources/js/jquery-ui.min.js" var="jqueryUiJs"/>
+<spring:url value="resources/js/bootstrap.js" var="bootstrapJs"/>
+<spring:url value="resources/js/jQuery.print.js" var="jqueryPrintJs"/>
+
+
+<spring:url value="resources/images/icon.png" var="titleIcon" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

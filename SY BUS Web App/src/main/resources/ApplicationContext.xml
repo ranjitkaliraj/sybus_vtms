@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- APPLICATION LAYER -->
+
+	<bean id="userService" class="com.sybus.web.service.UserService">
+		<constructor-arg ref="userdao" />
+	</bean>
+
+	<bean id="routeService" class="com.sybus.web.service.RouteService">
+		<constructor-arg ref="routedao" />
+		<constructor-arg ref="busStopService" />
+	</bean>
+	
+	<bean id="busStopService" class="com.sybus.web.service.BusStopService">
+		<constructor-arg ref="routedao" />
+	</bean>	
+	
+	<bean id="scheduleService" class="com.sybus.web.service.ScheduleService">
+		<constructor-arg ref="scheduledao" />
+	</bean>
+	
+	<bean id="vehicleService" class="com.sybus.web.service.VehicleService">
+		<constructor-arg ref="vehicledao" />
+	</bean>
+		
+	<bean id="fareService" class="com.sybus.web.service.FareService">
+		<constructor-arg ref="faredao" />
+	</bean>
+	
+		<bean id="reportService" class="com.sybus.web.service.ReportService">
+		<constructor-arg ref="passengerdao" />
+		<constructor-arg ref="routedao" />
+		<constructor-arg ref="vehicledao" />
+		<constructor-arg ref="scheduledao" />
+		<constructor-arg ref="faredao" />
+	</bean>
+	
+
+
+
+	<!-- DATABASE LAYER -->
+
+	<bean id="database"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.postgresql.Driver" />
+		<property name="url" value="jdbc:postgresql://localhost:5432/sybus" />
+		<property name="username" value="postgres" />
+		<property name="password" value="Apple123" />
+	</bean>
+
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="database"></property>
+	</bean>
+
+	<bean id="faredao" class="com.sybus.web.database.dao.FareDao">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+
+	<bean id="passengerdao" class="com.sybus.web.database.dao.PassengerDao">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+
+	<bean id="routedao" class="com.sybus.web.database.dao.RouteDao">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+
+	<bean id="scheduledao" class="com.sybus.web.database.dao.ScheduleDao">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+
+	<bean id="sessiondao" class="com.sybus.web.database.dao.SessionDao">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+
+	<bean id="userdao" class="com.sybus.web.database.dao.UserDao">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+
+	<bean id="vehicledao" class="com.sybus.web.database.dao.VehicleDao">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+
+</beans>

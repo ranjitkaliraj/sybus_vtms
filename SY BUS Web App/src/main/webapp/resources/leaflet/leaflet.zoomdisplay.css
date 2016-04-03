@@ -1,0 +1,10 @@
+.leaflet-control-zoom-display {
+    width: 26px;
+    height: 26px;
+	left:0px;
+	bottom:8px;
+    text-align: center;
+	background-color:#FFF;
+    font: bold 12px/20px Tahoma, Verdana, sans-serif;
+    padding-top: 0.3em;
+}

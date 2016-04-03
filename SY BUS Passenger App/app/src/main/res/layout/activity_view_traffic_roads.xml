@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sybus.android.userapp.ui.view_traffic_roads">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/view_app_bar" />
+
+    <View
+        android:id="@+id/traffic_roads_activity_tabbar_bottom_line"
+        android:layout_below="@id/app_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/tab_bar_shadow"/>
+
+
+    <FrameLayout
+        android:id="@+id/traffic_roads_not_available"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/traffic_roads_activity_tabbar_bottom_line"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Traffic not Available"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="38dp"
+            android:padding="12dp"
+            android:text="Currently, traffic situation not found on this route."
+            android:textSize="16dp" />
+
+    </FrameLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/traffic_road_lists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/traffic_roads_activity_tabbar_bottom_line"
+        android:background="@color/screen_background_white">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

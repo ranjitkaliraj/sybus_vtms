@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/touch_effect_bg">
+
+<!--
+this is not working with mtab indicator so not included in above layout
+    android:background="@drawable/touch_effect_bg"
+
+    -->
+    <TextView
+        android:id="@+id/tabTextView"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textColor="@drawable/active_tab_text_color_indicator"
+        android:gravity="center"
+        android:textSize="14sp"/>
+
+</LinearLayout>

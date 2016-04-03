@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SYBUS Driver</string>
+    <string name="title_activity_main"></string>
+    <string name="action_settings">Set URL</string>
+    <string name="title_activity_splash">SYBUS Driver</string>
+
+    <string name="title_activity_location">LocationActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name = "URL">http://192.168.0.103/SYBusAPIApp/api</string>
+</resources>
+

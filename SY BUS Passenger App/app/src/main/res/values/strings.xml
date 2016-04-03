@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">SY Bus</string>
+    <string name="title_activity_main">SY BUS</string>
+    <string name="action_settings">URL</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_profile">Profile</string>
+
+    <string-array name="tabs">
+        <item>HOME</item>
+        <item>PINNED</item>
+        <item>ROUTE</item>
+        <item>PAYMENT</item>
+    </string-array>
+
+    <string-array name="navPanelItemsTitlesNologin">
+        <item>Home</item>
+        <item>Pinned Bus</item>
+        <item>Route Tracking</item>
+        <item>Fare Payment</item>
+        <item>My Location</item>
+        <item>Available Routes</item>
+        <item>Route Traffic Finder</item>
+        <item>Help</item>
+        <item>About</item>
+        <item>Settings</item>
+        <item>Feedback and Query</item>
+        <item>Create an Account</item>
+        <item>Forget Password</item>
+    </string-array>
+
+    <string-array name="navPanelItemsTitlesLoggedIn">
+        <item>Home</item>
+        <item>Pinned Bus</item>
+        <item>Route Tracking</item>
+        <item>Fare Payment</item>
+        <item>My Location</item>
+        <item>Available Routes</item>
+        <item>Route Traffic Finder</item>
+        <item>Help</item>
+        <item>About</item>
+        <item>Settings</item>
+        <item>Feedback and Query</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_dialog">dialogActivity</string>
+    <string name="title_activity_splash">SY Bus</string>
+    <string name="login_error_message">Invalid Username/Password</string>
+    <string name="login_title">Account Login</string>
+    <string name="login_email_title">Email ID:</string>
+    <string name="login_password_title">Password:</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_map_test">MapTest</string>
+    <string name="search_description">Find a Bus, wherever you want to go.</string>
+
+    <string name="search_more_option1_title">NEAREST ROUTE</string>
+    <string name="search_more_option2_title">NEAREST STOP</string>
+
+    <string name="search_more_option1_detail">Find a Bus in nearest Route around you. Click to start by browsing available Routes.</string>
+    <string name="search_more_option2_detail">Find a Bus in nearest Stop around you. Click to start by browsing available Stops.</string>
+
+    <string name="title_activity_search">SEARCH</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_forget_password">FORGET PASSWORD</string>
+    <string name="title_activity_detail">VEHICLE DETAIL</string>
+    <string name="title_activity_user_location">USER LOCATION</string>
+    <string name="title_activity_view_route">ROUTES</string>
+    <string name="title_activity_view_traffic">FIND TRAFFIC</string>
+    <string name="title_activity_view_route_on_map">ROUTE MAP</string>
+    <string name="title_activity_view_traffic_roads">TRAFFIC RESULT</string>
+    <string name="title_activity_view_traffic_roads_on_map">TRAFFIC MAP</string>
+    <string name="title_activity_submit_query">SUBMIT QUERY</string>
+    <string name="title_activity_create_account">CREATE ACCOUNT</string>
+    <string name="title_activity_pinned_map_view">VEHICLE TRACKING</string>
+    <string name="title_activity_view_walking_route_on_map">WALKING ROUTE</string>
+    <string name="title_activity_setting">SETTINGS</string>
+    <string name="title_activity_about">ABOUT</string>
+
+</resources>
+

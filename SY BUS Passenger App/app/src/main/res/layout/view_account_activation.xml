@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/divider_medium" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/rectangular_layout_shadow_effect_light">
+
+
+            <EditText
+                android:id="@+id/view_activate_account_code"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Enter Code"
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:text="An ACTIVATION CODE has been sent to your email. Please, check your email and enter the code here. If you didn't get the code, click to re-send code button below."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12dp"/>
+
+
+        <Button
+            android:id="@+id/view_activate_account_resend"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="4dp"
+            android:text="RE-SEND ACTIVATION CODE"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/divider_medium" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sybus.android.userapp.ui.AboutActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/view_app_bar" />
+
+    <View
+        android:id="@+id/about_activity_tabbar_bottom_line"
+        android:layout_below="@id/app_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/tab_bar_shadow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/about_activity_tabbar_bottom_line"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/divider_medium"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center_horizontal"
+                android:text="SY BUS - Passenger App"
+                android:id="@+id/textView9" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_horizontal"
+                android:text="Version 1.0" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center"
+                android:src="@drawable/app_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="SAJHA YATAYAT VEHICLE TRACKING AND MANAGEMENT SYSTEM" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/divider_medium"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="2dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

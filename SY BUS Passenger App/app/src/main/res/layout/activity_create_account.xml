@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sybus.android.userapp.ui.create_account">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/view_app_bar" />
+
+    <View
+        android:id="@+id/create_account_activity_tabbar_bottom_line"
+        android:layout_below="@id/app_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/tab_bar_shadow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/create_account_activity_tabbar_bottom_line"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rectangular_layout_shadow_effect_light">
+
+
+            <EditText
+                android:id="@+id/create_account_fName"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="first name"
+                android:inputType="text"
+                android:paddingLeft="8dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rectangular_layout_shadow_effect_light">
+
+
+            <EditText
+                android:id="@+id/create_account_lName"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="last name"
+                android:inputType="text"
+                android:paddingLeft="8dp" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rectangular_layout_shadow_effect_light">
+
+
+            <EditText
+                android:id="@+id/create_account_email"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="email address"
+                android:inputType="text"
+                android:layout_marginBottom="12dp"
+                android:paddingLeft="8dp" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rectangular_layout_shadow_effect_light">
+
+
+            <EditText
+                android:id="@+id/create_account_password1"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rectangular_layout_shadow_effect_light">
+
+
+            <EditText
+                android:id="@+id/create_account_password2"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="re-enter password"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/create_account_submit"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="CREATE ACCOUNT"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+</RelativeLayout>
